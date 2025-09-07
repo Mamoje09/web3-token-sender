@@ -25,6 +25,7 @@ This script **broadcasts real transactions**.
 ## 📂 Project Structure
 
 web3_token_sender/
+
 ├── send_token.py # Main script
 
 ├── requirements.txt # Dependencies

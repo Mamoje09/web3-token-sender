@@ -36,6 +36,7 @@ web3_token_sender/
 ---
 
 ▶️ Usage (CLI)
+
 Send ETH
 
 python send_token.py 0xRecipientAddress 0.01 ETH

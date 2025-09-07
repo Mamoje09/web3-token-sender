@@ -33,6 +33,7 @@ web3_token_sender/
 
 └── .env # Local environment variables (ignored by Git)
 
+---
 
 ▶️ Usage (CLI)
 Send ETH
@@ -43,20 +44,27 @@ Send USDC
 
 python send_token.py 0xRecipientAddress 5 USDC
 
+---
 
 ✅ Output:
 
 ✅ Sent 0.01 ETH → 0xRecipient
+
 🔗 Tx Hash: 0x123abc...
 
 ✅ Sent 5.0 USDC → 0xRecipient
+
 🔗 Tx Hash: 0x456def...
+
+---
 
 📸 Demo Output
 
 Console output (ETH + USDC transfers)
 
 Etherscan confirmation screenshots
+
+---
 
 🛠 Roadmap
 
@@ -67,6 +75,8 @@ Add ERC-721 (NFT) transfers
 Interactive CLI (choose token + amount without arguments)
 
 Optional web dashboard
+
+---
 
 📬 About Me
 
@@ -82,8 +92,8 @@ This is my third Web3 project, showing I can not only read blockchain data but a
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/mamoje09/web3_token_sender.git
-cd web3_token_sender
+git clone https://github.com/mamoje09/web3-token-sender.git
+cd web3-token-sender
 
 
  

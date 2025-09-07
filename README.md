@@ -61,6 +61,12 @@ python send_token.py 0xRecipientAddress 5 USDC
 
 📸 Demo Output
 
+**Console Demo (ETH + USDC transfers)**  
+![Console Demo](screenshots/console_demo.png)
+
+**Etherscan Transaction Proof (Sepolia)**  
+![Etherscan Tx](screenshots/etherscan_tx.png)
+
 Console output (ETH + USDC transfers)
 
 Etherscan confirmation screenshots
@@ -84,16 +90,6 @@ Optional web dashboard
 I’m Mamo (GitHub: mamoje09
 I,m a backend engineer expanding into Web3.
 This is my third Web3 project, showing I can not only read blockchain data but also send transactions programmatically with a professional CLI tool.
-
----
-
-## 📸 Demo Output
-
-**Console Demo (ETH + USDC transfers)**  
-![Console Demo](screenshots/console_demo.png)
-
-**Etherscan Transaction Proof (Sepolia)**  
-![Etherscan Tx](screenshots/etherscan_tx.png)
 
 
 ---

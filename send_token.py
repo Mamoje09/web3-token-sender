@@ -1,7 +1,9 @@
 import os
+import sys
 from dotenv import load_dotenv
 from web3 import Web3
 
+# Load environment variables
 load_dotenv()
 
 provider = os.getenv("WEB3_PROVIDER")
@@ -59,7 +61,20 @@ def send_usdc(to_address, amount_usdc):
     print(f"🔗 Tx Hash: {w3.to_hex(tx_hash)}")
 
 if __name__ == "__main__":
-    # DEMO VALUES (replace with real)
-    recipient = "0xRecipientAddressHere"
-    send_eth(recipient, 0.001)
-    send_usdc(recipient, 5)
+    if len(sys.argv) != 4:
+        print("Usage: python send_token.py <recipient> <amount> <ETH|USDC>")
+        sys.exit(1)
+
+    recipient = sys.argv[1]
+    amount = float(sys.argv[2])
+    token = sys.argv[3].upper()
+
+    if not Web3.is_address(recipient):
+        raise SystemExit("❌ Invalid Ethereum address")
+
+    if token == "ETH":
+        send_eth(recipient, amount)
+    elif token == "USDC":
+        send_usdc(recipient, amount)
+    else:
+        raise SystemExit("❌ Token must be ETH or USDC")
